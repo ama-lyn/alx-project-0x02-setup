@@ -20,7 +20,7 @@ const CardList: React.FC = () => {
   );
 };
 
-const CardListing: React.FC = () => {
+const Card: React.FC = () => {
   return (
     <div className="min-h-screen">
       <div className="py-8">
@@ -30,4 +30,4 @@ const CardListing: React.FC = () => {
   );
 };
 
-export default CardListing;
+export default Card;

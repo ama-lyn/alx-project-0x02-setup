@@ -2,15 +2,15 @@ import { CardProps } from '@/interfaces/index';
 
 export const cardData: CardProps[] = [
     {
-        title: "Amanda's Setup",
-        content: "Get Amanda started."
+        title: "Card 1",
+        content: "This is the content of card 1."
     },
     {
-        title: "Amanda's Tools",
-        content: "See Amanda's favorite tools."
+        title: "Card 2",
+        content: "This is the content of card 2."
     },
     {
-        title: "Amanda's Projects",
-        content: "Explore Amanda's recent projects."
+        title: "Card 3",
+        content: "This is the content of card 3."
     }
 ]

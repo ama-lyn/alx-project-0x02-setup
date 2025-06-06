@@ -7,13 +7,20 @@ const Header: React.FC = () => {
         <h1 className="text-2xl font-bold">Amanda</h1>
         <nav>
           <ul className="flex space-x-4">
-            <li className='hover:text-yellow-400 cursor:pointer'>
-              <Link href="/home" className='cursor:pointer'/>
-              Home
+            <li className="hover:text-yellow-400 cursor:pointer">
+              <Link href="/home">
+                Home
+              </Link>
             </li>
             <li className="hover:text-yellow-400 cursor:pointer">
-              <Link href="/about" className='cursor:pointer'/>
-              About
+              <Link href="/about">
+                About
+              </Link>
+            </li>
+            <li className="hover:text-yellow-400 cursor:pointer">
+              <Link href="/posts">
+                Posts
+              </Link>
             </li>
           </ul>
         </nav>

@@ -8,11 +8,11 @@ const Header: React.FC = () => {
         <nav>
           <ul className="flex space-x-4">
             <li className='hover:text-yellow-400 cursor:pointer'>
-              <Link href="/home" />
+              <Link href="/home" className='cursor:pointer'/>
               Home
             </li>
             <li className="hover:text-yellow-400 cursor:pointer">
-              <Link href="/about"/>
+              <Link href="/about" className='cursor:pointer'/>
               About
             </li>
           </ul>

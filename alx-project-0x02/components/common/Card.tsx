@@ -1,5 +1,4 @@
-import { type CardProps } from '@/interfaces';
-import { cardData } from '@/constants/index';
+import { type CardProps } from "@/interfaces";
 
 const CardItem: React.FC<{ item: CardProps }> = ({ item }) => {
   return (
@@ -10,24 +9,20 @@ const CardItem: React.FC<{ item: CardProps }> = ({ item }) => {
   );
 };
 
-const CardList: React.FC = () => {
-  return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4 md:px-8">
-      {cardData.map((item: CardProps, index: number) => (
-        <CardItem key={index} item={item} />
-      ))}
-    </div>
-  );
-};
+const CardList: React.FC<{ posts: CardProps[] }> = ({ posts }) => (
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4 md:px-8">
+    {posts.map((item, index) => (
+      <CardItem key={index} item={item} />
+    ))}
+  </div>
+);
 
-const Card: React.FC = () => {
-  return (
-    <div className="min-h-screen">
-      <div className="py-8">
-        <CardList />
-      </div>
+const Card: React.FC<{ posts: CardProps[] }> = ({ posts }) => (
+  <div className="min-h-screen">
+    <div className="py-8">
+      <CardList posts={posts} />
     </div>
-  );
-};
+  </div>
+);
 
 export default Card;
